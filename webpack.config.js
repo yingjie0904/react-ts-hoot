@@ -55,9 +55,11 @@ module.exports = {
                 }, {
                     loader: 'postcss-loader',//postcss是用来给CSS中根据can i use 网站的数据添加厂商前缀的
                     options: {
-                        plugins: [
-                            require('autoprefixer')
-                        ]
+                        postcssOptions:{
+                            plugins: [
+                                require('autoprefixer')
+                            ]
+                        }
                     }
                 },
                     {
@@ -77,9 +79,11 @@ module.exports = {
                     {
                         loader: 'postcss-loader',
                         options: {
-                            plugins: [
-                                require('autoprefixer')
-                            ]
+                            postcssOptions:{
+                                plugins: [
+                                    require('autoprefixer')
+                                ]
+                            }
                         }
                     },
                     {
